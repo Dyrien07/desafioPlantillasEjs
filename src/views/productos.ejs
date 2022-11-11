@@ -1,0 +1,42 @@
+
+    <%- include("./partials/main.ejs")%>
+<body>
+ 
+    <div class="container-fluid">
+        <div class="row">
+            <form action="/productos" method="POST" class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Producto</label>
+    <input type="text" class="form-control" id="validationCustom01" name="title" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Precio</label>
+    <input type="text" class="form-control" id="validationCustom02" name="price" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Thumbnail</label>
+    <div class="input-group has-validation">
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" name="thumbnail" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">enviar</button>
+  </div>
+</form>
+        </div>
+    </div>
+
+    
+   
+</body>
+</html>
